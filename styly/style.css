@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+@font-face{
+    font-family: 'Farmhouse';
+    src: url('../fontes/Farmhouse.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'FARMHOUSERECIPE';
+    src: url('../fontes/FARMHOUSERECIPE.otf' ) format('opentype');
+    font-weight: normal;
+ 
+}
+@font-face {
+    font-family: 'OrganFarmerDemo';
+    src: url('../fontes/OrganFarmerDemo.ttf') format('truetype');
+    font-weight: normal;
+   
+}
+@font-face {
+    font-family: 'farmfresh';
+    src: url('../fontes/farmfresh.otf' )format('opentype');
+    font-weight: normal;
+
+}
+
+/* Color Theme Swatches in RGBA */
+.Resvolución-1-rgba { color: rgba(165, 162, 114, 1); }
+.Resvolución-2-rgba { color: rgba(114, 108, 79, 1); }
+.Resvolución-3-rgba { color: rgba(89, 85, 66, 1); }
+.Resvolución-4-rgba { color: rgba(242, 232, 215, 1); }
+.Resvolución-5-rgba { color: rgba(191, 136, 105, 1); }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+:root{
+    --corfundo00: rgba(242, 232, 215, 1);
+    --corfundo001:#FFFFFF;
+    --corfundo002:#FCFCFC;
+    --corm00:#C2A78F;
+    --corm01:#CFB299;
+    --corm002:#A8917D;
+    --c0rm003:rgba(191, 136, 105, 1);
+    --verde00:rgba(165, 162, 114, 1);
+    --verde001: rgba(114, 108, 79, 1);
+    --verde002:#38362a; 
+
+    --fonte-padra0: Arial,Verdana,Helvetica,sans-serif;
+    --fonte-padrao1: 'Crimson Text', serif;
+    --fonte-destaqueh1: 'Bebas Neue', cursive;
+    --fonte-linkserifa:'OrganFarmerDemo',cursive;
+    --fonte-enfaseserifa:'FARMHOUSERECIPE',cursive;
+    --fonte-outrasseserifarmhouse:'Farmhouse',cursive;
+    --fonte-bbr:'farmfresh',cursive;
+
+}
+header{
+   /* background-color: var(--corfundo002);*/
+   background-image: linear-gradient(to top, var(--corm00),var(--corfundo001)),var(--corfundo002);
+    border-radius: 10px;  
+    min-height: 155px;
+   text-align: center;
+  
+}
+
+header >h1{
+    color: var(--verde00);
+    font-size: 2.3em;
+    margin-bottom: 33px;
+    background-color: var(--verde002);
+    box-shadow: -8px -11px 10px black;
+    margin-top: 30px;
+    font-family: var(--fonte-padra0);
+ 
+ }
+ header p{
+    font-family: var(--fonte-padra0);
+    font-size: 1.3em;
+    padding-left: 30px;
+    padding-left: 30px;
+   box-shadow:  2px -2px 10px 2px rgb(0 0 0 / 40%);
+ }
+ header img{
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 9px;
+    margin-bottom: 6px;
+
+}
+
+nav {
+   font-family: var(--fonte-padrao1);
+  padding: 15px;
+
+  box-shadow: 8px 12px 10px 10px black;
+   background-color: var(--verde00);
+
+   
+}
+nav a{
+    color: var(--corfundo002);
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 1.3s;
+    padding: 10px;
+}
+nav >a:hover{
+    background-color: var(--verde001);
+}
+body{
+    background-color: var(--corfundo000);
+    
+}
+a.externo::after{
+    content: '\00a0\1F517';
+}
+
+main{
+    background-color: var(--corfundo002);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto auto 20px auto;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.473);
+}
+
+main img{
+    width: 100%;
+}
+
+
+main h1 {
+    color: var(--corm01);
+    background-image: linear-gradient(to right , var(--verde002),transparent);
+    padding: 10px;
+    font-family: var(--fonte-padra0);
+    text-shadow: 30px -10px 2px var(--verde002);
+    -webkit-text-stroke-width: 0.69px;
+    -webkit-text-stroke-color:var(--corfundo002);
+
+}
+main article >h2 {
+   background-image: linear-gradient(to left ,var(--corm002),transparent);
+   color:var(--corfundo001);
+   font-size: 1.3em;
+   text-indent: 8px;
+}
+main aside>h3{
+    background-image: linear-gradient(to left ,var(--corm002),transparent);
+    color:var(--corfundo001);
+}
+main p{
+    margin: 13px 0px;
+    text-indent: 23px;/*Espaço do paragrafo*/
+    text-align: justify;
+    line-height: 2.3em;
+    font-size: 1em;
+    font-family: var(--fonte-padra0);
+
+}
+main strong{
+    color: var(--corm002);
+    font-weight: bolder;
+    background-color: var(--verde002);
+    padding: 3px 6px;
+}
+
+main a{
+    text-decoration: none;/*Retira o subliado*/
+    font-weight: bold;
+    color: var(--verde00);
+    background-color: var(--corfundo00);
+    padding: 3px 6px;
+    border-radius: 9px;  
+}
+main a:hover{/*Passando o mouse em cima*/
+    text-decoration: underline;
+    color: var(--corfundo001);
+
+}
+div.video{
+    background-color: var(--corfundo002);
+ 
+    margin: 11px -11px 0px 10px;
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video > iframe{
+    position: absolute;
+    top: 3%;
+    left:3% ;
+    width: 90%;
+    height: 90%;
+}
+
+    article h2{
+    background-color: var(--verde002);
+    color: var(--corfundo001);
+    margin: 13px auto auto auto;
+    }
+    .inicio{
+        margin: 60px auto auto auto;
+    }
+    aside h3{
+    background-color: var(--verde002);
+    color: var(--corfundo001);
+
+    }
+    aside{
+        background-color: #c2a78f38;
+        padding: 13px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.425);
+    }
+    aside >h3{
+        color: var(--corfundo002);
+        font-weight: bold;
+        padding: 10px;
+        margin: -10px -10px 0px -10px ;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+    aside  > ul{
+        font-family: var(--fonte-padrao1);
+        text-indent: 3px;/*Espaço do paragrafo*/
+        text-align: justify;
+        line-height: 1.3em;
+        font-size: 1em;
+        margin-bottom: 27px;
+    }
+
+
+    aside >ul{
+        list-style-position: inside;
+        columns: 2;
+        text-align: justify;
+        list-style-type: '\2714\00a0\00a0';/*05 3 outra*/
+    }
+footer{
+    background-color: var(--verde00);
+    color: var(--corfundo002);
+    text-align: center;
+    font-size: 0.9em;
+    padding: 63.9px;
+  
+}
+footer a{
+    color: var(--verde002);
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--corfundo000);
+
+}
